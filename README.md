@@ -1,4 +1,4 @@
-# capistrno-runit
+# capistrano-runit
 
 This gem is a collection of various capistrano tasks that helps to manage runit services. It's useful for rails applications that uses runit to run per-user processes (unicorn, resque, sidekiq, thinking_sphinx, etc).
 
