@@ -49,7 +49,7 @@ namespace :runit do
     task :enable do
       on roles(:app) do |host|
         if test "[ -d #{deploy_to}/runit/available/puma ]"
-          within "runit/enabled" do
+          within "#{deploy_to}/runit/enabled" do
             execute :ln, "-sf", "../available/puma", "puma"
           end
         else
